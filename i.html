@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>NoteAPP</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link  rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+
+<h2 class="serif" style="font-family:Arial, Helvetica, sans-serif">Note Keeper</h2>
+<p class="serif">This app will help You to maintain own notes having title and content with the features to edit,Delete, and Create new notes..<br>Here You will got the best notes ever in Your life Time.</p>
+
+<div class="container">
+    <div class="jumbotron">
+      <header>
+        <h1>Welcome to Note App</h1>
+      </header>
+    </div>
+  </div>
+
+<section>
+  <div class="container">
+    <div class="jumbotron">
+
+
+
+      <script>
+        $(document).ready(function(){
+
+          $("button").click(function(){
+            console.log("Check");
+
+            var title = $('#title').val();
+            var body = $('#content').val();
+
+              $("#showtitle").append('<div class="col-md-4"><div class="card" style="width: 18rem;"><div class="card-body"><h5 class="card-title">'+title+'</h5><p class="card-text">'+body+'</p></div></div></div>');
+
+            });
+          });
+        </script>
+
+
+
+
+        <div class="container">
+          <div class="row" id="showtitle">
+
+          </div>
+        </div>
+
+
+        <form action="">
+          <label>TITLE</label><br>
+          <input type="text" name="title" value="" id="title"><br>
+          <label>CONTENT</label><br>
+           <input type="text" name="content" value="" id="content"><br>
+        </form>
+
+        <button>Submit</button>
+
+
+
+
+          </div>
+
+
+
+
+      </body>
+
+      </div>
+    </div>
+    <div class="container">
+      <div class="jumbotron">
+        <footer>
+          <p>Thank You!</p>
+        </footer>
+      </div>
+
+</body>
+</html>
